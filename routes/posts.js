@@ -1,14 +1,15 @@
 import express from 'express';
 import { Router } from 'express';
+import path, { dirname } from 'path';
 
 const router = Router();
 
 // Serve static files from the 'public' directory
-//app.use(express.static(path.join(__dirname, 'public')));
+//router.use(express.static(path.join(__dirname, 'public')));
 
 
-/*
-app.get('/about', (req, res) => {
+
+/*app.get('/about', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'about.html'));   
 }) */
 let posts = [
